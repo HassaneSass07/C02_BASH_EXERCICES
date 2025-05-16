@@ -1,27 +1,25 @@
-#include <stdio.h>  // Inclusion de la bibliothèque standard pour les entrées/sorties
+#include <stdio.h>  // Pour printf() et scanf()
+
+// Fonction pour calculer la somme
+int addition(int x, int y) {
+    return x + y;
+}
 
 int main() {
-//    int a, b, somme;
-//
-//    // Demande à l'utilisateur de saisir deux entiers
-//    printf("Entrez deux entiers : ");
-//    scanf("%d" "%d", &a, &b);  // Lecture des deux entiers
-//
-//    // Calcul de la somme
-//    somme = a + b;
-//
-//    // Affichage du résultat
-//    printf("La somme est : %d\n", somme);
-//
-//    return 0;  // Fin normale du programme
-//}
-
-    int a, b, somme;
-
+    int a, b;
+    int result;
+    
     printf("Entrez deux entiers : ");
-    scanf("%d" "%d", &a, &b);
-
-    somme = a + b;
-    printf("La somme est : %d\n", somme);
-    return 0;
+    
+    // Vérifie que deux entiers ont bien été saisis
+    if (scanf("%d %d", &a, &b) != 2) {
+        printf("Erreur : veuillez entrer deux nombres entiers valides.\n");
+        return 1; // Quitte le programme avec un code d'erreur
     }
+
+    result = addition(a, b);
+
+    printf("La somme est : %d\n", result);
+
+    return 0;
+}
