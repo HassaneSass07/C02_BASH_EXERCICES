@@ -1,5 +1,3 @@
-// Fichier : sum_two_integers.c
-
 #include <stdio.h>  // Inclusion de la bibliothèque standard pour les entrées/sorties
 
 int main() {

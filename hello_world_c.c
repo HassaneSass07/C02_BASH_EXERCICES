@@ -1,5 +1,3 @@
-// Fichier : hello_world_c.c
-
 #include <stdio.h>  // Inclusion de la bibliothèque standard d'entrées/sorties
 
 int main() {

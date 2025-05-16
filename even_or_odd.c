@@ -1,5 +1,3 @@
-// Fichier : even_or_odd.c
-
 #include <stdio.h>  // Pour printf et scanf
 
 int main() {

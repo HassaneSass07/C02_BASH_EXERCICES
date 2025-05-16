@@ -1,5 +1,3 @@
-// Fichier : swap_no_temp.c
-
 #include <stdio.h>
 
 int main() {
