@@ -1,22 +1,19 @@
 #include <stdio.h>
 
-int main() {
+int main(void)
+{
     int a, b;
 
-    // Lecture des deux entiers
-    printf("Entrez deux nombres (a et b) : ");
+    // Lecture de deux entiers sans message préalable
     scanf("%d %d", &a, &b);
-
-    // Affichage avant l’échange
-    printf("Avant échange : a = %d, b = %d\n", a, b);
 
     // Échange sans variable temporaire
     a = a + b;
     b = a - b;
     a = a - b;
 
-    // Affichage après l’échange
-    printf("Après échange : a = %d, b = %d\n", a, b);
+    // Affichage exactement conforme à l'exemple
+    printf("Après échange: a = %d, b = %d\n", a, b);
 
     return 0;
 }
