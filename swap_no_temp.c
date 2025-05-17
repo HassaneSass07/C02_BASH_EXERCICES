@@ -7,12 +7,12 @@ int main(void)
     // Lecture de deux entiers sans message préalable
     scanf("%d %d", &a, &b);
 
-    // Échange sans variable temporaire
-    a = a + b;
-    b = a - b;
-    a = a - b;
+    // Échange sans variable temporaire en utilisant XOR
+    a = a ^ b;
+    b = a ^ b;  // b devient a (ancien)
+    a = a ^ b;  // a devient b (ancien)
 
-    // Affichage exactement conforme à l'exemple
+    // Affichage conforme à l'exemple
     printf("Après échange: a = %d, b = %d\n", a, b);
 
     return 0;
