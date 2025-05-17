@@ -15,6 +15,7 @@ int main(void)
     a = a + b;
     b = a - b;
     a = a - b;
+    b = a + b;
 
     // Affichage du résultat comme demandé
     printf("Après échange: a = %d, b = %d\n", a, b);
