@@ -9,5 +9,5 @@ int main(void) {
     // Affiche la somme des deux entiers
     printf("La somme est : %d\n", a + b);
 
-    return 0;
+    return 1;
 }
