@@ -8,13 +8,6 @@ int main() {
     printf("Entrez un entier positif :");
     scanf("%d", &nombre);
 
-    // Vérifier que l'entrée est valide (nombre >= 0)
-    if (nombre < 0) {
-        printf("Erreur : le factoriel n'est pas défini pour les nombres négatifs.\n");
-        return 1; // Sortie avec code d'erreur
-        
-    }
-
     // Calcul du factoriel avec une boucle for
     for (int i = 1; i <= nombre; i++) {
         factoriel *= i;
