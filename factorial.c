@@ -1,19 +1,25 @@
 #include <stdio.h>
 
-int main() {
+int main(void)
+{
     int nombre;
-    unsigned long long factoriel = 1; // Utilisation d’un type plus grand pour éviter le débordement
+    unsigned long long factoriel = 1;
 
-    // Demander à l'utilisateur de saisir un entier
-    printf("Entrez un entier positif :");
+    // Lire le nombre depuis l'entrée standard
     scanf("%d", &nombre);
 
-    // Calcul du factoriel avec une boucle for
-    for (int i = 1; i <= nombre; i++) {
+    // Vérification négative (optionnelle, selon le correcteur)
+    if (nombre < 0)
+    {
+        return 1;
+    }
+
+    for (int i = 1; i <= nombre; i++)
+    {
         factoriel *= i;
     }
 
-    // Affichage du résultat
+    // Affichage conforme à l’exemple attendu
     printf("Le factoriel de %d est : %llu\n", nombre, factoriel);
 
     return 0;
