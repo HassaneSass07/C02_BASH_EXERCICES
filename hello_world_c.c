@@ -1,8 +1,7 @@
-#include <stdio.h>  // Inclusion de la bibliothèque standard d'entrées/sorties
+#include <stdio.h>
 
 int main() {
-    // printf est utilisé pour afficher du texte à l'écran
-    printf("Hello, World!\n");
-    
-    return 0; // Indique que le programme s'est terminé avec succès
+    printf("Hello, World! \n");
+    return 0;
 }
+//c'est un programme en C qui affiche "Hello, World!"

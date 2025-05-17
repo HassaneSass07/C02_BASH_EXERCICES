@@ -1,26 +1,22 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int nombre;
-    unsigned long long factoriel = 1;
+int main() {
+    int nombre = 0;
+    int i = 1;
 
-    // Lire le nombre depuis l'entrée standard
-    scanf("%d", &nombre);
+    scanf("%d", &nombre); // lire l'entrée de l'utilisateur
 
-    // Vérification négative (optionnelle, selon le correcteur)
-    if (nombre < 0)
-    {
-        return 1;
-    }
-
-    for (int i = 1; i <= nombre; i++)
-    {
-        factoriel *= i;
-    }
-
-    // Affichage conforme à l’exemple attendu
-    printf("Le factoriel de %d est : %llu\n", nombre, factoriel);
+    if (nombre < 0) {
+        printf("Erreur.\n");
+    } else {
+        int fact = 1; // Initialiser la variable fact a 1
+        while (i <= nombre) {
+            fact *= i; // Multiplier fact par i
+            i++; // incrémenter i
+        }
+        printf("Le factoriel de %d est : %d\n", nombre, fact);
+        }
 
     return 0;
 }
+// c'est un programme qui lit un nombre entier et affiche son factoriel    

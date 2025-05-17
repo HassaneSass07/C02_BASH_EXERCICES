@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-int main(void)
-{
-   int a, b;
+int main() {
+    int a = 0, b = 0;
+    int resultat = 0;
 
-    scanf("%d",&a);
-    scanf("%d",&b);
+    scanf("%d %d", &a, &b); 
     
-    printf("La somme est : %d\n", a + b);
-
-   return 0;
+    resultat = a + b;
+    printf("La somme est : %d\n", resultat);
+    return 0;
 }
+// c'est un programme en C qui lit deux entiers et affiche leur somme 
