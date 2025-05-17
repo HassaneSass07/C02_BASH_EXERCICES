@@ -3,10 +3,12 @@
 int main(void) {
     int a, b;
 
-    // Demande à l'utilisateur de saisir deux entiers
-    scanf("%d %d", &a, &b);
+    // Lecture des deux entiers sans message
+    if (scanf("%d %d", &a, &b) != 2) {
+        return 1; // erreur de saisie
+    }
 
-    // Affiche la somme des deux entiers
+    // Affichage exact demandé
     printf("La somme est : %d\n", a + b);
 
     return 0;
