@@ -2,15 +2,15 @@
 
 int main(void)
 {
-    int a, b;
+    int a, b, temp;
 
     // Lecture de deux entiers sans message préalable
     scanf("%d %d", &a, &b);
 
-    // Échange sans variable temporaire via multiplication et division
-    a = a * b;
-    b = a / b;  // b devient a (ancien)
-    a = a / b;  // a devient b (ancien)
+    // Échange avec variable temporaire
+    temp = a;
+    a = b;
+    b = temp;
 
     // Affichage conforme à l'exemple
     printf("Après échange: a = %d, b = %d\n", a, b);
