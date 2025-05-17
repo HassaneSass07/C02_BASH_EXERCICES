@@ -1,18 +1,16 @@
-#include <stdio.h>  // Pour printf et scanf
+#include <stdio.h>
 
-int main() {
+int main(void) {
     int nombre;
 
-    // Demander à l'utilisateur de saisir un entier
-    printf("Entrez un entier : ");
+    // Lecture d'un entier
     scanf("%d", &nombre);
 
-    // Vérifier si le nombre est pair ou impair
-    if (nombre % 2 == 0) {
+    // Vérifie si le nombre est pair ou impair et affiche le résultat
+    if (nombre % 2 == 0)
         printf("%d est un nombre pair.\n", nombre);
-    } else {
+    else
         printf("%d est un nombre impair.\n", nombre);
-    }
 
-    return 0;  // Fin du programme
+    return 0;
 }

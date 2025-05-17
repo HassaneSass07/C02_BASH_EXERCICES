@@ -1,19 +1,13 @@
-#include <stdio.h>  // Inclusion de la bibliothèque standard pour les entrées/sorties
+#include <stdio.h>
 
-int main() {
-    int a, b, somme;
+int main(void) {
+    int a, b;
 
     // Demande à l'utilisateur de saisir deux entiers
-    printf("Entrez deux entiers : ");
-    scanf("%d""%d", &a, &b);  // Lecture des deux entiers
+    scanf("%d %d", &a, &b);
 
-    // Calcul de la somme
-    somme = a + b;
+    // Affiche la somme des deux entiers
+    printf("La somme est : %d\n", a + b);
 
-    // Affichage du résultat
-    printf("La somme est : %d\n", somme);
-
-    return 0;  // Fin normale du programme
+    return 0;
 }
-
-    
